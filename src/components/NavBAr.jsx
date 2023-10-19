@@ -1,25 +1,29 @@
+import React from "react";
 import Os_Mais_Vendidos from "./Os_Mais_Vendidos";
 import Produto from "./Produto";
-import "./MeuPrimeiroComponente.css"
-export function NavBar(){
-    return(
+import "./MeuPrimeiroComponente.css";
+
+function NavBar() {
+    return (
         <header className="Headerr">
-            <nav >
-                <span className="TituloNav">Carros Legal</span>
-                <div>
-                    <a href={'a'}>Início</a>
-                    <a href={'a'}>Produtos</a>
-                    <a href={'a'}>Contato</a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
-
-    )
+    );
 }
 
-export default NavBar
-
-
-
-
-
+export default NavBar;
